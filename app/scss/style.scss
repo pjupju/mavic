@@ -162,10 +162,16 @@
         &:nth-child(even){
             margin-left: 40px;
             transform: translateY(25px);
-        }    
+        }
+        &:nth-child(3){
+          margin-left: 30px;
+        }
+        &:nth-child(4){
+          margin-left: 60px;
+        }
     }
-    &__item-1, 
-    &__item-3{
+    &:first-child, 
+    &:nth-child(3){
         position: relative;
         &::before, 
         &::after{
@@ -175,7 +181,7 @@
             background-position: 0 0;
         }
     }
-    &__item-1{
+    &:first-child{
         &::before{
             height: 48px;
             width: 245px;
@@ -184,7 +190,7 @@
             top: 38px;
         }
     }
-    &__item-3{
+    &:nth-child(3){
         &::before{
             height: 40px;
             width: 257px;
@@ -235,6 +241,16 @@
         font-size: 15px;
         line-height: 18px;
     }
+}
+
+.specifications{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    
+  }
 }
 
 @import "media";
